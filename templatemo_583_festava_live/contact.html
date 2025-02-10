@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        cursor: pointer;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: beige;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        top: 0;
+      }
+
+      h3 {
+        font-size: 2.2rem;
+        color: #ade39e;
+        font-style: italic;
+        font-family: cursive;
+        letter-spacing: 4px;
+      }
+      h3:hover {
+        transform: scaley(1.8);
+        transition: 0.4s ease-in;
+        -ms-transform-origin-z: 7px;
+        transform: translateX(80px);
+        color: rgb(255, 238, 0);
+      }
+
+      .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .search input[type="search"] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .search i {
+        color: #fbfbfb;
+        cursor: pointer;
+      }
+
+      .district-con {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      select {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .link {
+        display: flex;
+        gap: 20px;
+      }
+
+      .link a {
+        text-decoration: none;
+        color: #ccc7c7;
+        font-size: 18px;
+        transition: color 0.3s ease;
+      }
+
+      .link a:hover {
+        color: #ffffff;
+        background-color: black;
+        transform: scale(1.2);
+      }
+
+      #search {
+        color: rgb(255, 255, 255);
+        border: white;
+      }
+
+      .dis {
+        color: rgb(255, 255, 255);
+      }
+      .form1 {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+        background-image: url('images/nicholas-green-unsplash-blur.jpg');
+      }
+      #f2 {
+        width: 350px;
+        min-height: 470px;
+        backdrop-filter: 10px;
+        margin-top: 160px;
+        padding: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: rgba(255, 255, 255, 0.2); /* Transparent white */
+        border-radius: 15px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px); /* Blurring effect */
+        -webkit-backdrop-filter: blur(10px); /* For Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Frosted border */
+      }
+      p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 33px;
+        margin-top: 5px;
+        font-size: 2rem;
+      }
+      input {
+        padding: 5px;
+        border-radius: 6px;
+        border: none;
+      
+      }
+      
+      
+      #submit:active {
+        color:black;
+        background-color: white;
+      }
+      #submit {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+                
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-festava-live.css" rel="stylesheet">
+        <link rel="icon" href="assets/img/logo/loder.png" type="image/x-icon">
+<!--
+
+TemplateMo 583 Festava Live
+
+https://templatemo.com/tm-583-festava-live
+
+-->
+
+    </head>
+    
+    <body>
+
+        <main>
+
+            <header class="site-header" style="background-color: black;">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-12 col-12 d-flex flex-wrap">
+                            <p class="d-flex me-4 mb-0">
+                                <i class="bi-person custom-icon me-2"></i>
+                                <strong class="text-dark">Seamlessly join events form Anywhere</strong>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        Festava Live
+                    </a>
+
+                    <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_1">Home</a>
+                            </li>
+    
+                            
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_6">Contact</a>
+                            </li>
+                        </ul>
+
+                        <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Buy Ticket</a>
+                    </div>
+                </div>
+            </nav>
+    <div class="form1">
+      <form id="f2">
+        <p style="color: white; !important;">Contact Form</p>
+        <input type="text" placeholder="name"  required>
+        <input type="email" placeholder="enter your email" required />
+        <input type="text" placeholder="subject"  required>
+        <label for="date">Message:</label>
+        <!-- <input type="text" placeholder="Enter querry"/> -->
+         <textarea rows="3" cols="30" placeholder="type your query!"></textarea>
+        <input type="submit" id="submit"/>
+      </form>
+    </div>
+   <script>
+    let isActive = false;
+      const submit = document.querySelector("#submit");
+       
+      function Myfun()  {
+        submit.value = "Subbmitted";
+        submit.style.backgroundColor = "green";
+        submit.style.color = "white";
+        submit.style.padding = "5px";
+        return Myfun;
+      }
+      submit.addEventListener("click",(event) => {
+            event.preventDefault();
+            if(!isActive) {
+              Myfun();
+              isActive = true;
+            }
+            else {
+              submit.value = "submit";
+              submit.style.backgroundColor = "";
+              submit.style.color = "";
+              submit.style.padding = "";
+              isActive= false;
+            }
+
+      });
+   </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>
